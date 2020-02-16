@@ -1,0 +1,21 @@
+<div class="navbar">
+    <a class="main" href="/">Bit</a>
+
+    <a href="/support">Suporte</a>
+    <a href="/premium">Premium</a>
+    <a href="./sponsors">Patrocinadores</a>
+    <a href="./blog/">Blog</a>
+    <a href="./extras">Extras</a>
+    
+    <div class="right">
+        <% if (user) { %>
+            <!--<img src="<%- user.avatarURL %>" alt="">-->
+            <a href="/me"><%- user.tag %></a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/authorize/logout">Logout</a>
+        <% } else { %>
+            <a href="/authorize">Login</a>
+        <% } %>     
+    </div>
+</div>
+

@@ -1,0 +1,8 @@
+- Suporte
+- Premium
+- Patrocinadores
+- Blog
+- Extras
+- ToS
+- Community Guidelines
+- Comandos

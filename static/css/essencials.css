@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+
+/*Configuração da parte inferior da página*/
+body {
+    background: #a1a1a1;
+    margin: 0 0;
+    padding: 0 0;
+}
+/*Coloca uma margem no conteúdo da página*/
+.page-content {
+    padding: 4px 42px;
+}
+
+.page-content h1 { margin-bottom: -10px; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+p, a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.navbar {
+    background: #FFBD59;
+    padding: 0.5rem 1rem;
+}
+
+.navbar a {
+    /*transition: .5s ease;*/
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.navbar .main {
+    font-size: 2rem;
+    padding-right: 0.5rem;
+}
+
+.navbar a:hover {
+    /*color: #7792f3;*/
+    transition: .15s ease;
+    color: #fa512a;
+}
+
+.navbar a:not(:last-child) {
+    margin-right: 12px;
+}
+
+
+.navbar .right {
+    float: right;
+    padding-top: 0.5rem;
+}
+
+/*------------------------------------------------------*/
+
+#footer {
+    height: 30%;
+    background-color: #545454;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 60;
+    
+}
+
+#footerText_1 {
+    padding-top: 1%;
+    font-weight: 60;
+}
+
+#footerText_2, #footerText_3, #footerText_4 {
+    font-weight: 60;
+    padding-top: 0.4%;
+}
+
+#footerText_3 {
+    padding-top: 0.2%;
+    padding-bottom: 0.5%;
+    font-size: 85%;
+}
+
+#footerText_4 {
+    padding-bottom: 0.7%;
+}
+
+#Footer_ToSReference {
+    text-decoration: none;
+}
+
+#footer  a, h1, h2, h3, h4, h5, h6 {
+    color: white;
+    /*transition: .5s ease;*/
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+#footer a:hover {
+    color: #46ebbc; 
+}
+
+
+/*----------------------------------------*/
+/*Font Awesome Config*/
+#twitterIcon {
+    color: black;
+    font-size: 160%;
+    padding-right: 0.3%;
+    min-height: 4.5rem;
+    vertical-align: middle;
+    overflow: auto;
+}
+
+#themeSelectionIcon {
+    color: black;
+    font-size: 2rem;
+    padding-right: 0.3%;
+    min-height: 4rem;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#languageSelectionIcon {
+    color: black;
+    font-size: 150%;
+    padding-right: 0.3%;
+    min-height: 4.1rem;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#loginIcon {
+    font-size: 240%;
+    min-height: 4.5rem;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/*Dashboard Menu CSS*/
+.left-menu {
+    display: ruby-base;
+    color: red;
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 15%;
+    float: left;
+    /*background-color: red;*/
+}
+.left-menu a {
+    margin-bottom: 10%;
+    text-decoration: none;
+    margin-bottom: 2px;
+    line-height: 30px;
+    color: black;
+    transition: .3s;
+    padding: 6px 10px;
+    /*padding-right: 15%;*/
+    border-radius: 3px;
+    width: 30%;
+}
+
+.left-menu a:hover {
+    transition: .2s;
+    background-color: #949494;
+}
+
+.left-menu hr {
+    box-sizing: content-box;
+    background: rgba(0,0,0,.05);
+    border: 0;
+    height: 1px;
+    padding-left: 10px;
+}
+
+.left-menu h6 {
+    font-size: 80%;
+    color: rgb(65, 65, 65);
+    font-weight: 400;
+    padding: 0px 10px;
+    padding-bottom: 0.2%;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*Outras Configs*/
+
+/*Menções do Discord*/
+/*Exemplo:
+<span class="discordMention">@NomeDoUsuário</span>*/
+
+.discordMention {
+    background-color: rgba(115,139,215,.1);
+    color: #7289da;
+    font-weight: 600;
+    transition: background-color 50ms,color 50ms;
+    padding: 2px;
+}
+
+.fas {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    padding-bottom: 2.8px;
+}
