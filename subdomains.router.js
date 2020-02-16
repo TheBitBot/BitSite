@@ -12,6 +12,8 @@ module.exports = (app, subdomain, ejs) => {
     //Blog
     app.use(subdomain('blog', require('./routes/blog')))
 
+    //Auth
+    app.use(subdomain('auth', require('./routes/auth')))
     
 
 }

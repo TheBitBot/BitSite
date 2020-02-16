@@ -8,11 +8,16 @@ var rootFolder = path.dirname(require.main.filename)
 
 //Quando a pessoa usa "link.com.br/"
 router.get('/', (req, res) => {
-    res.render('index', { pageTitle: 'Bit', user: req.session.user || null , userGuilds: req.session.userGuilds || null})
+    res.render('index', { 
+        pageTitle: 'Bit', 
+        user: req.session.user || null , 
+        userGuilds: req.session.userGuilds || null,
+        hostname: "thebitbot.xyz"
+    })
 })
 
 router.get('/dashboard', (req, res) => {
-    console.log(req.session.userGuilds)
+    
     res.render('dashboard', { pageTitle: 'Dashboard', user: req.session.user || null, userGuilds: req.session.userGuilds || null});
 })
 

@@ -5,8 +5,10 @@ const session = require('express-session')
 const ejs = require('ejs')
 const router = express.Router()
 
+require('dotenv').config({  
+    path: "./env/.env"
+})
 const app = express();
-
 
 //Define o EJS como view enggine padrão
 app.set('view engine', 'ejs');
