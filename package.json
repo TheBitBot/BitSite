@@ -10,11 +10,13 @@
   "author": "",
   "license": "AGPL-3.0",
   "dependencies": {
+    "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "express-subdomain": "^1.0.5",
+    "firebase": "^7.9.3",
     "form-data": "^3.0.0",
     "node-fetch": "^2.6.0",
     "vhost": "^3.0.2"
