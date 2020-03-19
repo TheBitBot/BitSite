@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="http://thebitbot.xyz/cdn/css/essencials.css">
+    <link rel="stylesheet" type="text/css" href="http://thebitbot.xyz/cdn/css/dashboard/guildSelection.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.thebitbot.website/cdn/css/normalize.css">
+    
+</head>
+<body>
+    <%- include('partials/navbar') %> 
+    <div class="guild-buttons-div">
+        <% for(var i = 0; i < userGuilds.length; i++) { %>
+           <% 
+                function getGuildInfo() {
+                firebase.database().ref(`Servidores/${userGuilds[i].id}`).once('value').then(function(snapshot) {
+                    var guildInfo = snapshot.val() || null
+                    return guildInfo
+                    });
+                } 
+                if(getGuildInfo() === null) return
+            %> 
+            <a href="/configure/<%- userGuilds[i].id %>/general " class="guild-button">
+                <img class="guild-icon" src="<%- userGuilds[i].iconURL %> " alt="">
+                <div class="guild-info">
+                    <div class="guild-name"><%- userGuilds[i].name %></div>
+                    <div class="guild-author">Dono</div>
+                </div>
+            </a>
+        <% } %> 
+    </div>
+</body>
+</html>

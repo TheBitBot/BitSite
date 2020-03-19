@@ -1,6 +1,5 @@
 module.exports = (express, app, subdomain, db, ejs) => {
-    //Suporte
-    app.use(subdomain('support', require('./routes/subdomain')));
+    
     //Premium
     app.use(subdomain('guidelines.community', (req, res, next) => {
         res.send('api succefuly connected!')
@@ -12,13 +11,14 @@ module.exports = (express, app, subdomain, db, ejs) => {
             language: req.session.language || "pt-br", 
             user: req.session.user || null})
         }));
-    app.use('/dashboard', require('./routes/dashboard'))
+    //app.use(subdomain('dashboard', (req, res, next) => {res.send('Hello World!')}))
+    app.use(subdomain('dashboard', require('./routes/dashboard')))
     //Blog
     app.use(subdomain('blog', require('./routes/blog')))
-
+    app.use('/blog', require('./routes/blog'))
     //Auth
+    //app.use(subdomain('auth', require('./routes/auth')))
     app.use(subdomain('auth', require('./routes/auth')))
-
     //Auth
     //app.use(subdomain('cdn', require('./controllers/cdn')))
     

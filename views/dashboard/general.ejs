@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe style="display:none" name="hidden-form"></iframe>
+    <script>
+        function saveChanges(input) {
+            console.log('a')
+            var content = document.querySelector(input)
+            fetch('/save', {
+                method: 'post',
+                body: 'teste'
+            })
+        }
+    </script>
+    Hello World!
+
+    <form action="/save" target="hidden-form">
+        <label for="prefix">Prefix</label><br>
+        <input type="text" id="prefix" name="prefix" value="<%- guildInfo.prefix %>"><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <br>
+    <%- user.username || 'Oh No!' %>
+    <br>
+    <%- guild.name || 'Oh No!' %>  
+</body>
+</html>

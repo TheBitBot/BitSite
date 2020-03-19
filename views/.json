@@ -1,0 +1,151 @@
+{
+	"name": "Subs do Peterinho",
+	"donationConfig": {
+		"customBadge": false,
+		"dailyMultiplier": false
+	},
+	"reactionRoleConfigs": [],
+	"trackedRssFeeds": [],
+	"selfMember": {
+		"id": "383661058029649920",
+		"name": "Peter_0101",
+		"discriminator": "4567",
+		"effectiveAvatarUrl": "https://cdn.discordapp.com/avatars/383661058029649920/5f3600936c42219068d796d7ba6a64c8.png"
+	},
+	"fortniteConfig": {
+		"advertiseNewItems": false
+	},
+	"musicConfig": {
+		"enabled": false,
+		"channels": []
+	},
+	"voiceChannels": [],
+	"trackedYouTubeChannels": [],
+	"trackedTwitchChannels": [],
+	"trackedTwitterAccounts": [],
+	"textChannels": [{
+		"id": "593199796202766336",
+		"canTalk": true,
+		"name": "regras"
+	}, {
+		"id": "599378637581451264",
+		"canTalk": true,
+		"name": "bem-vindos"
+	}, {
+		"id": "599378668099207178",
+		"canTalk": true,
+		"name": "avisos"
+	}, {
+		"id": "599378772931641365",
+		"canTalk": true,
+		"name": "faq"
+	}, {
+		"id": "599378790203916290",
+		"canTalk": true,
+		"name": "importantes"
+	}],
+	"donationKeys": [],
+	"activeDonationKeys": [],
+	"guildInfo": {
+		"id": 593178017019199488,
+		"name": "Subs do Peterinho"
+	},
+	"general": {
+		"localeId": "pt-debug",
+		"commandPrefix": "+",
+		"deleteMessageAfterCommand": true,
+		"warnOnMissingPermission": false,
+		"warnOnUnknownCommand": false,
+		"blacklistedChannels": [],
+		"warnIfBlacklisted": false 
+	},
+	"levelUpConfig": {
+		"roleGiveType": "STACK",
+		"noXpChannels": [],
+		"noXpRoles": [],
+		"announcements": [],
+		"rolesByExperience": [],
+		"experienceRoleRates": []
+	},
+	"roles": [{
+		"id": "593178690087682059",
+		"name": "Peterinho",
+		"colorRaw": 15844367,
+		"canInteract": false,
+		"isHoisted": true,
+		"isManaged": false,
+		"isPublicRole": false
+	}, {
+		"id": "656264663994073108",
+		"name": "Dyno",
+		"colorRaw": 536870911,
+		"canInteract": false,
+		"isHoisted": false,
+		"isManaged": true,
+		"isPublicRole": false
+	}, {
+		"id": "593178713093439518",
+		"name": "Admins",
+		"colorRaw": 9297177,
+		"canInteract": false,
+		"isHoisted": true,
+		"isManaged": false,
+		"isPublicRole": false
+	}, {
+		"id": "593178771784335367",
+		"name": "Bots",
+		"colorRaw": 65399,
+		"canInteract": false,
+		"isHoisted": true,
+		"isManaged": false,
+		"isPublicRole": false
+	}, {
+		"id": "598924841042575407",
+		"name": "Vip\u0027s",
+		"colorRaw": 9176553,
+		"canInteract": false,
+		"isHoisted": false,
+		"isManaged": false,
+		"isPublicRole": false
+	}, {
+		"id": "593178826486448131",
+		"name": "Subs",
+		"colorRaw": 3703295,
+		"canInteract": false,
+		"isHoisted": true,
+		"isManaged": false,
+		"isPublicRole": false
+	}, {
+		"id": "623245423339110400",
+		"name": "Bit",
+		"colorRaw": 536870911,
+		"canInteract": false,
+		"isHoisted": false,
+		"isManaged": true,
+		"isPublicRole": false
+	}, {
+		"id": "656497558595698688",
+		"name": "Loritta",
+		"colorRaw": 536870911,
+		"canInteract": false,
+		"isHoisted": false,
+		"isManaged": true,
+		"isPublicRole": false
+	}, {
+		"id": "675017406728372266",
+		"name": "Bit - Canary",
+		"colorRaw": 536870911,
+		"canInteract": true,
+		"isHoisted": false,
+		"isManaged": true,
+		"isPublicRole": false
+	}, {
+		"id": "593178017019199488",
+		"name": "@everyone",
+		"colorRaw": 536870911,
+		"canInteract": true,
+		"isHoisted": false,
+		"isManaged": false,
+		"isPublicRole": true
+	}]
+}

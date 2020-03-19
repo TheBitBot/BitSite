@@ -1,0 +1,19 @@
+.guild-button {
+    
+    /*background-color: green;*/
+    /*border-radius: 3%;*/
+    box-shadow: none;
+    width: 15%;
+    height: 15%;
+    color: black;
+}
+
+.guild-icon {
+    width: 15%;
+}
+
+.guild-buttons-div {
+    width: 50%;
+   
+}
+

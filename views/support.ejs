@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bit</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shorocut icon" href="./favicon.ico">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="/cdn/css/normalize.css">
+  <link rel="stylesheet" href="/cdn/css/suporte.css">
+  <link rel="stylesheet" href="/cdn/css/essencials.css">
+
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="./js/navBar.js"></script>
+   <!-- Place your kit's code here -->
+   <script src="https://kit.fontawesome.com/b69cf77721.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <%- include('partials/navbar') %> 
+
+  <div id="mainContext">
+        <h1 id="pageTitle">Suporte</h1>
+        <h3 id="description">Se você teve um problema ou quer dar uma sugestão, aqui estão os servidores do Bit!</h3>
+        <!--As bandeiras não funcionaram pelo menos por enquanto-->
+        <!--<a id="brFlag" href="https://discord.gg/afkYf3v">
+            <img id="brFlagImg" src="./img/icons/brFlagRZ.png" alt="BandeiraDoBrasil">
+        </a>
+        <a id="usFlag" href="">
+            <img id="usFlagImg" src="./img/icons/usFlagRZ.png" alt="BandeiraDosEstadosUnidos">
+        </a>
+        <a id="brText" href="https://discord.gg/afkYf3v">Português (PT-BR)</a>
+        <a id="usText" href="">Inglês (EN-US)</a>-->
+        <ul>
+            <li><a id="brText" href="https://discord.gg/afkYf3v">Português (PT-BR)</a></li>
+            <li id="listSeparator">⸻⸻⸻⸻⸻</li>
+            <li><a id="usText" href="404.html">Inglês (EN-US) - Soon</a></li>
+        </ul>
+  </div>
+
+  
+
+  <!--Home Ads - Primeiros-->
+  <div class="pageAds">
+        <!--<img id="ad" src="./img/testAd_bySafraPay.png" alt="SafraPay_Ad">-->
+      </div>
+  
+  
+      <div id="footer">
+          <h3 id="footerText_1">©Peter_0101 & BitBot 2019 - Todos os Direitos Reservados</h3>
+          <h4 id="footerText_2">O Bit não está de forma alguma afiliado ao Discord. Nem deve ser considerado uma empresa endossada pelo Discord.</h4>
+          <p class="footer_iconsReference">Icons made by <a class="footer_iconsReference footerItalicContext" href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a class="footer_iconsReference footerItalicContext" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+          <h6 id="footerText_3">Discord ®/™ 2015-2019 Discord Inc.</h5>
+          <h5 id="footerText_4">By using Bit and/or this website, you agree to our <a id="Footer_ToSReference" href="./legal/privacyPolicyPTBR.html">Terms of Service & Privacy Policy</a></h5>
+        </div>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+</body>
+</html>

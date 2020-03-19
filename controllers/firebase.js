@@ -8,7 +8,7 @@ module.exports = function() {
     credential: firebase.credential.cert(serviceAccount),
     databaseURL: "https://bit-db.firebaseio.com"
     })
-
+    console.log('a')
     const db = firebase.database()
     
     return db
