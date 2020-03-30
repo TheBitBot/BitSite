@@ -36,7 +36,7 @@ router.get('/configure/:guildID/:page', (req, res) => {
 
     
 })
-
+/*
 router.get('/save', (req, res, next) => {
     console.log(req.query)
     console.log(guild)
@@ -49,6 +49,8 @@ router.get('/save', (req, res, next) => {
     });
     
     res.send('Hello World!')
+    
 })
+*/
 
 module.exports = router;

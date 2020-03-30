@@ -19,6 +19,8 @@ module.exports = (express, app, subdomain, db, ejs) => {
     //Auth
     //app.use(subdomain('auth', require('./routes/auth')))
     app.use(subdomain('auth', require('./routes/auth')))
+    //Dashboard API
+    app.use(subdomain('api', require('./routes/api.dashboard')))
     //Auth
     //app.use(subdomain('cdn', require('./controllers/cdn')))
     

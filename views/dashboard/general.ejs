@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <style>
+        body {
+            padding: 10px;
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #fff;
+            background-color: #262E3D;
+        }
+    </style>
 </head>
 <body>
     <iframe style="display:none" name="hidden-form"></iframe>
-    <script>
-        function saveChanges(input) {
-            console.log('a')
-            var content = document.querySelector(input)
-            fetch('/save', {
-                method: 'post',
-                body: 'teste'
-            })
-        }
-    </script>
     Hello World!
-
-    <form action="/save" target="hidden-form">
-        <label for="prefix">Prefix</label><br>
-        <input type="text" id="prefix" name="prefix" value="<%- guildInfo.prefix %>"><br>
-        <input type="submit" value="Submit">
-    </form>
+    <script src="http://api.thebitbot.xyz/scripts/save"></script>
     
+    <input type="text" name="prefix">
+    
+    <label class="switch">
+        <p>Deletar mensagem do comando?</p>
+        <input type="checkbox">
+        <span class="slider"></span>
+    </label>
+
+    Something: <input type="text" name="something" onchange="saveChanges()"/>
+        
+    Whatever: <input type="checkbox" name="whatever" />
+      
+    <div id="results"></div>
+        
+    <%- guildInfo %> 
     <br>
     <%- user.username || 'Oh No!' %>
     <br>
-    <%- guild.name || 'Oh No!' %>  
+    <%- guild.name || 'Oh No!' %>
 </body>
 </html>

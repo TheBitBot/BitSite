@@ -20,7 +20,8 @@
                     var guildInfo = snapshot.val() || null
                     return guildInfo
                     });
-                } 
+                }
+                
                 if(getGuildInfo() === null) return
             %> 
             <a href="/configure/<%- userGuilds[i].id %>/general " class="guild-button">
